@@ -1,0 +1,9 @@
+{
+  "name": "livedb-redis",
+  "version": "0.0.1",
+  "main": "redis.js",
+  "dependencies": {
+    "redis": "~0.10.3",
+    "hiredis": "~0.1.17"
+  }
+}
