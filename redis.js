@@ -45,8 +45,6 @@ RedisDb.prototype.writeOp = function(cName, docName, opData, callback) {
         callback && callback(err);
         if (!err) {
             self.redis.set(opsVersionName(cName, docName), opData.v);
-            // 3 days expire
-            self.redis.expire(name, 259200);
         }
     });
 };
